@@ -1,0 +1,398 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-initial",
+      "name": "Abhijeet Rao",
+      "email": "abhijeetraoavr@gmail.com",
+      "password_hash": "$2b$10$DyNEvzpdbzxxGmcrAdXbFuEwDK648DunpKITgg89.V/dP3b6KCLgi",
+      "role": "ADMIN",
+      "avatar": "",
+      "bio": "TravelMate Platform Administrator & Core Explorer",
+      "created_at": "2026-10-19T03:36:16.865Z",
+      "updated_at": "2026-10-19T03:44:19.855Z",
+      "status": "ACTIVE",
+      "last_login_at": "2026-10-31T08:39:11.047Z"
+    },
+    {
+      "id": "usr-admin-1792381459917",
+      "name": "Lokesh Ramkor",
+      "email": "lokeshramkor650@gmail.com",
+      "password_hash": "$2b$10$IyBFCbssThLWGYaeUhNVluoQ5B0RG1HfQKnJpohHvA/vjbfS.Biki",
+      "role": "ADMIN",
+      "avatar": "",
+      "bio": "TravelMate Administrator & Operations Co-Lead",
+      "created_at": "2026-10-19T03:44:19.917Z",
+      "updated_at": "2026-10-19T03:44:19.917Z",
+      "status": "ACTIVE",
+      "last_login_at": "2026-10-31T08:39:22.694Z"
+    },
+    {
+      "id": "usr-1792382544053-4861",
+      "name": "Tanvi Deshmukh",
+      "email": "traveler.test@example.com",
+      "password_hash": "$2b$10$iSYq4VR6V7m2KdFjBN6Ti.6ImQqLyWdVUIo4Uq53ifCeJ1tCS7G5a",
+      "role": "USER",
+      "status": "ACTIVE",
+      "avatar": "",
+      "bio": "Sahyadri trekker and heritage enthusiast from Pune.",
+      "created_at": "2026-10-19T04:02:24.053Z",
+      "updated_at": "2026-10-19T04:02:24.053Z"
+    }
+  ],
+  "trips": [
+    {
+      "id": "trip-sahyadri-konkan",
+      "user_id": "usr-admin-initial",
+      "name": "Sahyadri & Konkan Grand Tour",
+      "location": "Mumbai • Pune • Mahabaleshwar • Raigad, Maharashtra",
+      "country": "India",
+      "dates": "Nov 14 - Nov 21",
+      "days_total": 8,
+      "budget_limit_usd": 1200,
+      "spent_usd": 680,
+      "status": "Active",
+      "is_archived": false,
+      "created_at": "2026-10-28T12:00:00.000Z",
+      "updated_at": "2026-10-28T12:00:00.000Z"
+    },
+    {
+      "id": "trip-marathwada-heritage",
+      "user_id": "usr-admin-initial",
+      "name": "Marathwada UNESCO Caves & Takht Hazur Sahib",
+      "location": "Chhatrapati Sambhaji Nagar • Ajanta • Ellora • Nanded, Maharashtra",
+      "country": "India",
+      "dates": "Dec 10 - Dec 18",
+      "days_total": 9,
+      "budget_limit_usd": 1450,
+      "spent_usd": 320,
+      "status": "Planned",
+      "is_archived": false,
+      "created_at": "2026-10-28T12:00:00.000Z",
+      "updated_at": "2026-10-28T12:00:00.000Z"
+    },
+    {
+      "id": "trip-vidarbha-tiger",
+      "user_id": "usr-1792382544053-4861",
+      "name": "Tadoba Tiger Safari & Lonar Crater Expedition",
+      "location": "Chandrapur (Tadoba) • Nagpur • Lonar, Maharashtra",
+      "country": "India",
+      "dates": "Jan 05 - Jan 14",
+      "days_total": 10,
+      "budget_limit_usd": 1600,
+      "spent_usd": 250,
+      "status": "Active",
+      "is_archived": false,
+      "created_at": "2026-10-28T12:00:00.000Z",
+      "updated_at": "2026-10-28T12:00:00.000Z"
+    }
+  ],
+  "itineraries": [
+    {
+      "id": "itin-1",
+      "trip_id": "trip-sahyadri-konkan",
+      "user_id": "usr-admin-initial",
+      "day": 1,
+      "time_slot": "08:30 - 10:30",
+      "title": "Gateway of India & Elephanta Caves Speedboat",
+      "location": "Colaba, Mumbai City, Maharashtra",
+      "category": "Heritage & Maritime",
+      "cost_usd": 15,
+      "created_at": "2026-10-28T12:00:00.000Z"
+    },
+    {
+      "id": "itin-2",
+      "trip_id": "trip-sahyadri-konkan",
+      "user_id": "usr-admin-initial",
+      "day": 2,
+      "time_slot": "07:00 - 11:00",
+      "title": "Sinhagad Fort Mountain Trek & Kanda Bhaji Breakfast",
+      "location": "Sinhagad Fort, Pune, Maharashtra",
+      "category": "Forts & Sahyadri Treks",
+      "cost_usd": 8,
+      "created_at": "2026-10-28T12:00:00.000Z"
+    },
+    {
+      "id": "itin-3",
+      "trip_id": "trip-sahyadri-konkan",
+      "user_id": "usr-admin-initial",
+      "day": 3,
+      "time_slot": "10:00 - 13:00",
+      "title": "Kaas Plateau UNESCO Wildflower Trail Walk",
+      "location": "Kaas Pathar, Satara, Maharashtra",
+      "category": "UNESCO World Natural Heritage",
+      "cost_usd": 10,
+      "created_at": "2026-10-28T12:00:00.000Z"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp-1",
+      "trip_id": "trip-sahyadri-konkan",
+      "user_id": "usr-admin-initial",
+      "title": "MTDC Ganpatipule Beach Cottage Stay",
+      "amount_usd": 120,
+      "category": "Accommodation",
+      "payer_name": "Abhijeet Rao",
+      "date": "Nov 15",
+      "created_at": "2026-10-28T12:00:00.000Z",
+      "currency": "USD"
+    },
+    {
+      "id": "exp-2",
+      "trip_id": "trip-sahyadri-konkan",
+      "user_id": "usr-admin-initial",
+      "title": "Raigad Fort Ropeway Pass & Heritage Guide",
+      "amount_usd": 38,
+      "category": "Activities",
+      "payer_name": "Abhijeet Rao",
+      "date": "Nov 16",
+      "created_at": "2026-10-28T12:00:00.000Z",
+      "currency": "USD"
+    },
+    {
+      "id": "exp-3",
+      "trip_id": "trip-vidarbha-tiger",
+      "user_id": "usr-1792382544053-4861",
+      "title": "Tadoba Moharli Gate Open Gypsy 4x4 Tiger Safari",
+      "amount_usd": 95,
+      "category": "Activities",
+      "payer_name": "Tanvi Deshmukh",
+      "date": "Jan 06",
+      "created_at": "2026-10-28T12:00:00.000Z",
+      "currency": "USD"
+    }
+  ],
+  "destinations": [
+    {
+      "id": "dest-mumbai-gateway",
+      "name": "Gateway of India & South Mumbai",
+      "city": "Mumbai",
+      "country": "India",
+      "continent": "Asia",
+      "category": "Heritage Monument",
+      "rating": 4.9,
+      "trips_count": 48,
+      "hero_image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-10-28T12:00:00.000Z"
+    },
+    {
+      "id": "dest-ellora-caves",
+      "name": "Ellora Caves & Kailash Temple",
+      "city": "Chhatrapati Sambhaji Nagar",
+      "country": "India",
+      "continent": "Asia",
+      "category": "UNESCO World Heritage",
+      "rating": 5,
+      "trips_count": 39,
+      "hero_image": "https://images.unsplash.com/photo-1598977123418-454555aa166b?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-10-28T12:00:00.000Z"
+    },
+    {
+      "id": "dest-tadoba-tiger",
+      "name": "Tadoba Andhari Tiger Reserve",
+      "city": "Chandrapur",
+      "country": "India",
+      "continent": "Asia",
+      "category": "Wildlife & Tigers",
+      "rating": 5,
+      "trips_count": 32,
+      "hero_image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-10-28T12:00:00.000Z"
+    },
+    {
+      "id": "dest-kaas-plateau",
+      "name": "Kaas Plateau Valley of Flowers",
+      "city": "Satara",
+      "country": "India",
+      "continent": "Asia",
+      "category": "UNESCO Natural Heritage",
+      "rating": 4.9,
+      "trips_count": 28,
+      "hero_image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      "created_at": "2026-10-28T12:00:00.000Z"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "res-mh-1001",
+      "booking_ref": "TM-MH-849201",
+      "user_id": "usr-admin-initial",
+      "trip_id": "trip-sahyadri-konkan",
+      "hotel_id": "hotel-mtdc-ganpatipule",
+      "hotel_name": "MTDC Beach Resort Ganpatipule",
+      "hotel_image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "district": "Ratnagiri",
+      "city": "Ganpatipule",
+      "room_type_id": "mtdc-ganpati-sea-deluxe",
+      "room_type_name": "Deluxe Sea Front Room",
+      "check_in_date": "2024-11-15",
+      "check_out_date": "2024-11-17",
+      "nights_count": 2,
+      "guests_count": 2,
+      "guest_name": "Abhijeet Rao",
+      "guest_email": "abhijeetraoavr@gmail.com",
+      "guest_phone": "+91 98765 43210",
+      "special_requests": "Ground floor sea-facing cottage close to Swayambhu temple walkway.",
+      "room_rate_per_night_inr": 3800,
+      "total_amount_inr": 7600,
+      "total_amount_usd": 92,
+      "status": "Confirmed",
+      "payment_status": "Paid",
+      "created_at": "2026-10-28T12:00:00.000Z"
+    },
+    {
+      "id": "res-mh-1002",
+      "booking_ref": "TM-MH-849202",
+      "user_id": "usr-1792382544053-4861",
+      "trip_id": "trip-vidarbha-tiger",
+      "hotel_id": "hotel-tadoba-jungle-camp",
+      "hotel_name": "Tadoba Jungle Camp (Moharli Gate)",
+      "hotel_image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+      "district": "Chandrapur",
+      "city": "Moharli, Chandrapur",
+      "room_type_id": "tadoba-luxury-tent",
+      "room_type_name": "Luxury Air-Conditioned Safari Tent",
+      "check_in_date": "2025-01-05",
+      "check_out_date": "2025-01-07",
+      "nights_count": 2,
+      "guests_count": 2,
+      "guest_name": "Tanvi Deshmukh",
+      "guest_email": "traveler.test@example.com",
+      "guest_phone": "+91 98111 22334",
+      "special_requests": "Please arrange open top 4x4 safari gypsy with Moharli gate permits.",
+      "room_rate_per_night_inr": 12500,
+      "total_amount_inr": 25000,
+      "total_amount_usd": 300,
+      "status": "Confirmed",
+      "payment_status": "Pay at Hotel",
+      "created_at": "2026-10-28T12:00:00.000Z"
+    }
+  ],
+  "ai_usage_logs": [],
+  "audit_logs": [
+    {
+      "id": "audit-1793435962695-711",
+      "admin_email": "lokeshramkor650@gmail.com",
+      "action": "ADMIN_LOGIN_SUCCESS",
+      "resource_type": "users",
+      "resource_id": "usr-admin-1792381459917",
+      "details": "Administrator logged in successfully.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-31T08:39:22.695Z"
+    },
+    {
+      "id": "audit-1793435951049-231",
+      "admin_email": "abhijeetraoavr@gmail.com",
+      "action": "ADMIN_LOGIN_SUCCESS",
+      "resource_type": "users",
+      "resource_id": "usr-admin-initial",
+      "details": "Administrator logged in successfully.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-31T08:39:11.049Z"
+    },
+    {
+      "id": "audit-1793433544698-763",
+      "admin_email": "lokeshramkor650@gmail.com",
+      "action": "ADMIN_LOGIN_SUCCESS",
+      "resource_type": "users",
+      "resource_id": "usr-admin-1792381459917",
+      "details": "Administrator logged in successfully.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-31T07:59:04.698Z"
+    },
+    {
+      "id": "audit-1793433532448-858",
+      "admin_email": "abhijeetraoavr@gmail.com",
+      "action": "ADMIN_LOGIN_SUCCESS",
+      "resource_type": "users",
+      "resource_id": "usr-admin-initial",
+      "details": "Administrator logged in successfully.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-31T07:58:52.448Z"
+    },
+    {
+      "id": "audit-1793426602733-263",
+      "admin_email": "lokeshramkor650@gmail.com",
+      "action": "ADMIN_LOGIN",
+      "resource_type": "users",
+      "resource_id": "usr-admin-1792381459917",
+      "details": "Administrator authenticated via Admin Portal.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-31T06:03:22.733Z"
+    },
+    {
+      "id": "audit-1793426598002-118",
+      "admin_email": "abhijeetraoavr@gmail.com",
+      "action": "ADMIN_LOGIN",
+      "resource_type": "users",
+      "resource_id": "usr-admin-initial",
+      "details": "Administrator authenticated via Admin Portal.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-31T06:03:18.002Z"
+    },
+    {
+      "id": "audit-1793249724814-916",
+      "admin_email": "abhijeetraoavr@gmail.com",
+      "action": "USER_FULL_DATA_INSPECTED",
+      "resource_type": "users",
+      "resource_id": "usr-admin-initial",
+      "details": "Admin inspected complete dataset for user abhijeetraoavr@gmail.com (trips: 2, reservations: 1).",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-29T04:55:24.814Z"
+    },
+    {
+      "id": "audit-1793249724792-877",
+      "admin_email": "abhijeetraoavr@gmail.com",
+      "action": "ADMIN_LOGIN_SUCCESS",
+      "resource_type": "users",
+      "resource_id": "usr-admin-initial",
+      "details": "Administrator logged in successfully.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-29T04:55:24.792Z"
+    },
+    {
+      "id": "audit-1793249720702-837",
+      "admin_email": "abhijeetraoavr@gmail.com",
+      "action": "ADMIN_LOGIN_SUCCESS",
+      "resource_type": "users",
+      "resource_id": "usr-admin-initial",
+      "details": "Administrator logged in successfully.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-29T04:55:20.702Z"
+    },
+    {
+      "id": "audit-1793249716534-309",
+      "admin_email": "lokeshramkor650@gmail.com",
+      "action": "ADMIN_LOGIN_SUCCESS",
+      "resource_type": "users",
+      "resource_id": "usr-admin-1792381459917",
+      "details": "Administrator logged in successfully.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-29T04:55:16.534Z"
+    },
+    {
+      "id": "audit-1793249713032-465",
+      "admin_email": "abhijeetraoavr@gmail.com",
+      "action": "ADMIN_LOGIN_SUCCESS",
+      "resource_type": "users",
+      "resource_id": "usr-admin-initial",
+      "details": "Administrator logged in successfully.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-29T04:55:13.032Z"
+    },
+    {
+      "id": "audit-init-mh",
+      "admin_email": "abhijeetraoavr@gmail.com",
+      "action": "MAHARASHTRA_DATA_INITIALIZED",
+      "resource_type": "system",
+      "resource_id": "maharashtra-all-districts",
+      "details": "Initialized 36 Maharashtra districts database, lodging reservations and user trip links.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-10-28T12:00:00.000Z"
+    }
+  ],
+  "meta": {
+    "version": "2.5.0",
+    "initialized_at": "2026-10-28T12:00:00.000Z"
+  }
+}

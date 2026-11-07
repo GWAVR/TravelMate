@@ -1,0 +1,6 @@
+{
+  "name": "TravelMate",
+  "description": "Group travel companion with TripGenie AI 360° travel auditor, real-time expense split ledger, smart itinerary planning, live weather assistant, and trip memories journal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

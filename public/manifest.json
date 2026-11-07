@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "TravelMate - Group Travel & Expense Companion",
+  "short_name": "TravelMate",
+  "description": "Group travel companion with offline itinerary planning and expense split ledger.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf8ff",
+  "theme_color": "#006194",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
